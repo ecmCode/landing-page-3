@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  
+  html, body{
+    @apply min-h-screen w-screen overflow-x-hidden relative font-sans
+  }
+  
+  input, textarea, button{
+    @apply px-4 py-2 rounded outline-none text-lime-500 caret-lime-500 bg-zinc-900 ring-1 ring-lime-500
+  }
+  button{
+    @apply transition hover:text-zinc-900 hover:bg-lime-500 hover:shadow-md hover:shadow-lime-300 tracking-wider uppercase
+  }
+  hr{
+    @apply border-none h-1 w-1/2 drop-shadow-md shadow-lime-900 bg-lime-500 my-4 mx-auto
+  }
+}
